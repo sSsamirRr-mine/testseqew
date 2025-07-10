@@ -1,0 +1,143 @@
+.fone-login {
+    min-height: 100vh;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    padding: 40px 32px;
+    min-width: 1200px;
+    position: relative;
+    gap: 40px;
+}
+
+.login>button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #0d3a6f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.login>button:hover {
+    background: #0d6efd;
+}
+
+.left-login {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+    margin-inline: 105px 50px;
+}
+
+.left-login h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #144272;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.left-login p {
+    margin: 0 0 10px 0;
+    color: #222;
+    font-size: 1rem;
+}
+
+.left-login label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #144272;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.left-login input {
+    padding: 8px 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.left-login input:focus {
+    border: 1.5px solid #0d6efd;
+}
+
+.left-login button {
+    background: #0d3a6f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.left-login button:hover {
+    background: #0d6efd;
+}
+
+.left-login a {
+    color: #7c3aed;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.p-login-two {
+    text-align: center;
+}
+
+.right-img {
+    flex: 1;
+    min-width: 220px;
+    min-height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url('https://undraw.co/api/illustrations/undraw_login_re_4vu2.svg') no-repeat center/contain; */
+    /* Replace with your own SVG or image if needed */
+}
+
+@media (max-width: 800px) {
+    .login {
+        flex-direction: column;
+        min-width: 320px;
+        gap: 20px;
+        padding: 24px 12px;
+    }
+
+    .right-img {
+        min-height: 140px;
+        min-width: 140px;
+    }
+}
+
+.p-login-one,
+.left-login h2 {
+    text-align: center;
+}

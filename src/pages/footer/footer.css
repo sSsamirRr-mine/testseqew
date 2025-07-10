@@ -1,0 +1,127 @@
+footer {
+    background: #10111a;
+    color: #fff;
+    padding: 40px 0 0 0;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.top-footer>div {
+    flex: 1 1 220px;
+    min-width: 220px;
+    margin-bottom: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logo h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.top-footer h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.top-footer p {
+    font-size: 0.97rem;
+    color: #b3b3c6;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.top-footer input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: none;
+    background: #232336;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.top-footer button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #a78bfa;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.top-footer button:hover {
+    background: #7c3aed;
+}
+
+.bottom-footer {
+    border-top: 1px solid #232336;
+    margin-top: 20px;
+    padding: 18px 40px 10px 40px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #b3b3c6;
+}
+
+.bottom-footer p {
+    margin: 0 0 8px 0;
+    color: #b3b3c6;
+    font-size: 0.95rem;
+}
+
+.bottom-footer a {
+    color: #3b82f6;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 0.97rem;
+    transition: color 0.2s;
+}
+
+.bottom-footer a:hover {
+    color: #a78bfa;
+}
+
+@media (max-width: 900px) {
+    .top-footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .bottom-footer {
+        padding: 18px 16px 10px 16px;
+    }
+}
